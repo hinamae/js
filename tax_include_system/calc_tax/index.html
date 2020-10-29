@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>税込み計算アプリ</title>
+
+        <script src="../lib/jquery.min.js"></script>
+        <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+        <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../lib/common.css">
+
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <script src="js/main.js"></script>
+        
+    </head>
+    <body>
+        <div class="container">
+            <h1>税込み計算アプリ</h1>
+
+            <div class="form-group">
+                <label>金額</label>
+                <input type="number" id="price" name="name" value="1000" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>税率</label>
+                <input type="number" id="taxRate" name="name" value="8" class="form-control" />
+            </div>
+
+            <button type="button" class="btn btn-primary btn-block" id="btnExec">Exec</button>
+
+            <div style="text-align: center; padding: .5em; font-size: 4em;">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-down-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+            </svg>
+            </div>
+
+            <div class="form-group">
+                <label>税額</label>
+                <input type="number" id="taxAmount" name="name" value="" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label>税込み</label>
+                <input type="number" id="taxIncluded" name="name" value="" class="form-control" />
+            </div>
+
+            </div>
+
+            </div>
+        </div>
+    </body>
